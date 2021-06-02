@@ -5,6 +5,9 @@ Visu ingredientu pavadinimai turi buti didziosiomis raidemis ir sudeti i array
 
 Isspausdinti gauta array i console
 
+Norimas rezultatas:
+['MORKOS', 'BULVES', 'SVOGUNAS', 'VANDUO', 'DRUSKA']
+
 */
 
 const liDOM = document.querySelectorAll('li');
