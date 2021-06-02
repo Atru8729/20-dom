@@ -12,5 +12,7 @@ Kiekvienam ingredientui prideti CSS class pavadinimu darzove
 const liDOM = document.querySelectorAll('li');
 
 for (let i = 0; i < liDOM.length; i++) {
-    liDOM[i].innerText = 'Israuta darzove';
+    liDOM[i].innerText = 'Pomidoras';
+    liDOM[i].classList.add('pomidoras');
 }
+
