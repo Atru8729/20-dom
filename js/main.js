@@ -1,18 +1,9 @@
-/*
-Surasti h1 (antraste)
-Prideti prie jos CSS class, kuri pakeicia teksto spalva i raudona
+const logoDOM = document.querySelector('.logo');
+const hamburgerDOM = document.querySelector('.hamburger');
 
-Surasti visus ingredientus
-Kiekvienam ingredientui prideti CSS class pavadinimu darzove
+console.log(logoDOM);
+console.log(hamburgerDOM);
 
-*/
-
-
-
-const liDOM = document.querySelectorAll('li');
-
-for (let i = 0; i < liDOM.length; i++) {
-    liDOM[i].innerText = 'Pomidoras';
-    liDOM[i].classList.add('pomidoras');
-}
-
+hamburgerDOM.addEventListener('click', () => {
+    logDOM.classList.toggle('big');
+})
