@@ -5,4 +5,5 @@ const spanDOM = document.querySelector('span');
 buttonDOM.addEventListener('click', (event) => {
     event.preventDefault();
     spanDOM.innerText = inputDOM.value;
+    inputDOM.value = '';
 })
