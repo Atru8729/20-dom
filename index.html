@@ -8,53 +8,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/basketball.css">
 </head>
 
 <body>
-    <h1>Programuotoju uzeigele</h1>
+    <h1>Sachmatu lenta (<span class="option"></span>)</h1>
     <form>
-        <div class="form-row">
-            <label for="customer">Kliento vardas</label>
-            <input id="customer" type="text">
-        </div>
-        <div class="form-row">
-            <div class="inline">
-                <input id="sriuba" type="checkbox" name="sriuba" value="sriuba">
-                <label for="sriuba">Sriuba</label>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="inline">
-                <input id="patiekalas" type="checkbox" name="patiekalas" value="patiekalas">
-                <label for="patiekalas">Pagrindinis patiekalas</label>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="inline">
-                <input id="desertas" type="checkbox" name="desertas" value="desertas">
-                <label for="desertas">Desertas</label>
-            </div>
-        </div>
-        <div class="form-row">
-            <label>Gerimas</label>
-            <div class="inline">
-                <input id="sultys" type="radio" value="sultys" name="gerimas">
-                <label for="sultys">Sultys</label>
-            </div>
-            <div class="inline">
-                <input id="gira" type="radio" value="gira" name="gerimas">
-                <label for="gira">Gira</label>
-            </div>
-            <div class="inline">
-                <input id="pienas" type="radio" value="pienas" name="gerimas">
-                <label for="pienas">Pienas</label>
-            </div>
-        </div>
-        <div class="form-row">
-            <button type="submit">Uzsakyti</button>
-        </div>
+        <label for="board">Kokio dydzio lentos nori?</label>
+        <input id="board" type="number">
+        <button type="submit">Generuoti</button>
     </form>
-    <div class="order">Uzsakymas...</div>
+    <div class="board"></div>
 
     <script src="./js/main.js" type="module" defer></script>
 </body>

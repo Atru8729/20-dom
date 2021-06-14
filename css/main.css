@@ -1,31 +1,41 @@
 body {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  min-height: 100vh;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  font-size: 20px;
+}
+.option {
+  padding: 0 10px;
+  border-bottom: 1px dotted red;
 }
 form {
   display: flex;
-  width: 300px;
   flex-direction: column;
-  gap: 15px;
-}
-.form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.form-row > .inline {
-  display: flex;
   gap: 20px;
 }
+input,
 button {
-  padding: 10px 40px;
+  padding: 5px 20px;
   font-size: 30px;
+  line-height: 40px;
 }
-.order {
-  width: 300px;
-  padding: 40px;
-  border: 5px dotted #36f;
+.board {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  box-shadow: 0 0 10px #0005;
+}
+.row {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid orange;
+}
+.cell {
+  height: 100%;
+  float: left;
+  border: 1px solid red;
 }
